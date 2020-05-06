@@ -35,10 +35,28 @@ class HomePage extends StatelessWidget {
             ctrl: gasControlller,
             label: "Gasolina",
           ),
-            Input(
+          Input(
             ctrl: alcController,
             label: "Alcool",
           ),
+
+          Container(
+            margin: EdgeInsets.all(55),
+            height: 60,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.9),
+              borderRadius: BorderRadius.circular(5)
+            ),
+            child: FlatButton(
+              child: Text("CALCULAR",
+              style: TextStyle(
+                color: Theme.of(context).primaryColor,
+                fontSize: 20,
+              ),
+              ),
+              onPressed: (){},
+              ),
+          )
         ],
       ),
     );
